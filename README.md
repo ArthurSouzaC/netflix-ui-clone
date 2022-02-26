@@ -1,5 +1,7 @@
 # NetflixUiClone
 
+Netflix web UI clone made with Angular. All data and images were obtained through the [TMDB API](https://developers.themoviedb.org/3).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
 ## Development server
