@@ -1,0 +1,18 @@
+.top-navbar {
+  position: sticky;
+  top: 0px;
+  background: transparent;
+  z-index: 3;
+  transition: 0.3;
+  transition-property: background-color;
+
+  > img {
+    position: sticky;
+    top: 10px;
+    width: 150px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

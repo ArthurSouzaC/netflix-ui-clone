@@ -1,0 +1,68 @@
+section {
+  display: flex;
+  flex-direction: column;
+
+  > .title {
+    font-size: 1.35rem;
+    margin-top: 30px;
+    z-index: 1;
+  }
+
+  .prev-btn,
+  .next-btn {
+    z-index: 2;
+    position: absolute;
+
+    width: 55px;
+    height: 260px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    opacity: 0;
+
+    transition: all ease 0.5s;
+  }
+
+  .prev-btn {
+    left: 0px;
+  }
+
+  .next-btn {
+    right: 0px;
+  }
+
+  > .movie-row {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    transition: margin 0.2s ease;
+
+    > .card {
+      padding: 15px;
+      z-index: 1;
+
+      > img {
+        width: 150px;
+        transition: 0.7s all ease;
+
+        &:hover {
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    &:hover .prev-btn,
+    &:hover .next-btn {
+      opacity: 1;
+    }
+  }
+}

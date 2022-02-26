@@ -1,0 +1,14 @@
+<div class="container">
+  <top-navbar></top-navbar>
+
+  <highlighted-movie [movieId]="'635302'"></highlighted-movie>
+
+  <div class="movie-section">
+    <movie-section
+      *ngFor="let section of sections; index as i"
+      [section]="sections[i]"
+    ></movie-section>
+  </div>
+
+  <loading-screen></loading-screen>
+</div>

@@ -1,0 +1,21 @@
+<section>
+  <h2 class="title">{{ getSectionTitle(section) }}</h2>
+
+  <div
+    class="movie-row"
+    [ngStyle]="{ 'margin-left': getSectionPagination(section) + 'px' }"
+  >
+    <div class="prev-btn" (click)="handlePrevButton(section)">
+      <span><mat-icon [inline]="true">chevron_left</mat-icon></span>
+    </div>
+    <div *ngFor="let movie of movies; index as i" class="card">
+      <img
+        src="{{ getImagePath(movie.poster_path) }}"
+        (click)="selectMovie(i)"
+      />
+    </div>
+    <div class="next-btn" (click)="handleNextButton(section)">
+      <span><mat-icon [inline]="true">chevron_right</mat-icon></span>
+    </div>
+  </div>
+</section>

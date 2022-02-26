@@ -1,0 +1,16 @@
+.container {
+  padding-left: 40px;
+  background-color: #141414;
+
+  > .movie-section {
+    margin-top: 70vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    > .movie-section {
+      margin-top: 0px;
+    }
+  }
+}
