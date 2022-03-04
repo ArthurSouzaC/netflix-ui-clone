@@ -4,6 +4,19 @@ Netflix web UI clone made with Angular. All data and images were obtained throug
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
+![main screenshot](https://github.com/ArthurSouzaC/netflix-ui-clone/blob/main/examples/main-screenshot.jpeg)
+
+---
+#### When clicking on movies/TV shows:
+
+![movie click example](https://github.com/ArthurSouzaC/netflix-ui-clone/blob/main/examples/movie-click.gif)
+
+---
+#### When scrolling between movies in a section:
+![horizontal scroll example](https://github.com/ArthurSouzaC/netflix-ui-clone/blob/main/examples/horizontal-scroll.gif)
+
+---
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
